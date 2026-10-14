@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#72519a">
+    <title>Sodo's Little World ✨</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stars" id="stars"></div>
+
+    <header class="header">
+        <a class="logo" href="#" data-page="home">
+            <span>🌸</span> Sodo's World
+        </a>
+
+        <div class="header-actions">
+            <button class="icon-button" id="musicButton" aria-label="Play or pause music">🎵</button>
+            <button class="icon-button" id="menuButton" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <nav class="navigation" id="navigation">
+        <button data-page="home">🏰 Home</button>
+        <button data-page="gift">🎁 Little Gift</button>
+        <button data-page="letter">💌 My Letter</button>
+        <button data-page="garden">🌷 Flower Garden</button>
+        <button data-page="memories">📸 Memories</button>
+    </nav>
+
+    <audio id="backgroundMusic" loop>
+        <source src="ssstik.io_1792019631518.mp3" type="audio/mpeg">
+    </audio>
+
+    <main>
+
+        <!-- HOME -->
+        <section class="page active" id="home">
+            <div class="hero">
+                <span class="moon">🌙</span>
+                <span class="lantern lantern-one">🏮</span>
+                <span class="lantern lantern-two">✨</span>
+                <span class="lantern lantern-three">🏮</span>
+
+                <div class="hero-content">
+                    <p class="eyebrow">A LITTLE FAIRYTALE JUST FOR YOU</p>
+
+                    <h1>Welcome to<br><span>Sodo's Little World</span></h1>
+
+                    <div class="portrait-container">
+                        <div class="portrait-ring">
+                            <img
+                                class="portrait"
+                                src="sandy.png.jpg"
+                                alt="Sodo"
+                                onerror="this.hidden=true; this.nextElementSibling.hidden=false;"
+                            >
+                            <div class="photo-fallback" hidden>🌸</div>
+                        </div>
+                        <span class="portrait-decoration decoration-one">✨</span>
+                        <span class="portrait-decoration decoration-two">💜</span>
+                        <span class="portrait-decoration decoration-three">🦋</span>
+                    </div>
+
+                    <h2>For My Favorite Princess 👑</h2>
+                        
+                    <button class="primary-button" data-page="gift">
+                        Begin Our Little Fairytale ✨
+                    </button>
+
+                    <p class="tiny-note">Made with a little magic and a lot of care ♡</p>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+                <button class="feature-card" data-page="gift">
+                    <span class="feature-icon">🎁</span>
+                    <strong>A Little Surprise</strong>
+                    <span>Something sweet is waiting for you.</span>
+                </button>
+
+                <button class="feature-card" data-page="letter">
+                    <span class="feature-icon">💌</span>
+                    <strong>A Letter from My Heart</strong>
+                    <span>A few words I wanted you to read.</span>
+                </button>
+
+                <button class="feature-card" data-page="garden">
+                    <span class="feature-icon">🌷</span>
+                    <strong>Enchanted Garden</strong>
+                    <span>Little flowers with little messages.</span>
+                </button>
+
+                <button class="feature-card" data-page="memories">
+                    <span class="feature-icon">📸</span>
+                    <strong>Memory Garden</strong>
+                    <span>A place for your favorite moments.</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- GIFT -->
+        <section class="page" id="gift">
+            <div class="section-container">
+                <button class="back-button" data-page="home">← Back to Our Little World</button>
+
+                <div class="section-heading">
+                    <span class="section-emoji">🎀</span>
+                    <h1>A Tiny Gift for My Favorite Princess</h1>
+                    <p>A little box, a little magic, and a little something to brighten your day.</p>
+                </div>
+
+                <div class="gift-area">
+                    <button class="gift-box" id="giftBox" aria-label="Open the gift">
+                        <span class="gift-lid"><span class="gift-bow"></span></span>
+                        <span class="gift-body"><span class="gift-ribbon"></span></span>
+                    </button>
+
+                    <button class="primary-button" id="openGiftButton">
+                        Open Your Little Gift 🎁
+                    </button>
+
+                    <div class="gift-content" id="giftContent" hidden>
+                        <div class="gift-surprise">🧸 🌷 💜</div>
+                        <h2>A Little Surprise, Just for You!</h2>
+                        <p>
+                            If happiness could fit inside a little box,
+                            I would fill it with a thousand smiles just for you.
+                        </p>
+                        <p>I hope this tiny surprise brings a little sparkle to your day, Sodo. ✨</p>
+                        <button class="secondary-button" data-page="letter">
+                            There's a Letter for You 💌
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LETTER -->
+        <section class="page" id="letter">
+            <div class="section-container">
+                <button class="back-button" data-page="home">← Back to Our Little World</button>
+
+                <div class="section-heading">
+                    <span class="section-emoji">💌</span>
+                    <h1>A Little Letter, From My Heart</h1>
+                    <p>A quiet moment, just for you.</p>
+                </div>
+
+                <article class="letter-card">
+                    <div class="letter-decoration">🌷</div>
+
+                    <p class="letter-greeting">Dear Sodo,</p>
+
+                    <p>
+                        I truly, truly don’t want to lose you,
+                         because you are the sweetest.
+                          I really don’t want you to be upset with me
+                          —my princess—because you are the most beautiful person my eyes have ever beheld.
+                           Please don’t be upset with me, my Sodo.
+                    </p>
+
+                    <p>
+                        I know I may not always get things right, and if I hurt
+                        your feelings, I'm truly sorry. You never deserved to
+                        feel sad because of me.
+                </p>
+                
+                    
+                </article>
+
+                <button class="primary-button letter-next" data-page="garden">
+                    Discover Your Flower Garden 🌷
+                </button>
+            </div>
+        </section>
+
+        <!-- FLOWER GARDEN -->
+        <section class="page" id="garden">
+            <div class="section-container">
+                <button class="back-button" data-page="home">← Back to Our Little World</button>
+
+                <div class="section-heading">
+                    <span class="section-emoji">🌷</span>
+                    <h1>Sodo's Enchanted Flower Garden</h1>
+                    <p>Pick a flower and discover the little message hidden inside. 🦋</p>
+                </div>
+
+                <div class="flower-garden">
+                    <button class="flower-card" data-message="You deserve all the little things that make you happy. 🌷">
+                        <span class="flower-emoji">🌷</span><span>Pink Tulip</span>
+                    </button>
+
+                    <button class="flower-card" data-message="A little kindness can make an ordinary day feel magical. 🌹">
+                        <span class="flower-emoji">🌹</span><span>Sweet Rose</span>
+                    </button>
+
+                    <button class="flower-card" data-message="May your smile shine brighter than the sun. 🌼">
+                        <span class="flower-emoji">🌼</span><span>Sunny Bloom</span>
+                    </button>
+
+                    <button class="flower-card" data-message="Never forget how special your dreams are. 💜">
+                        <span class="flower-emoji">🪻</span><span>Purple Dream</span>
+                    </button>
+
+                    <button class="flower-card" data-message="Every new day is a chance for something beautiful. 🌸">
+                        <span class="flower-emoji">🌸</span><span>Cherry Blossom</span>
+                    </button>
+
+                    <button class="flower-card" data-message="Sending a little sunshine to your corner of the world. 🌻">
+                        <span class="flower-emoji">🌻</span><span>Golden Flower</span>
+                    </button>
+                </div>
+
+                <div class="flower-message" id="flowerMessage" aria-live="polite">
+                    <span>✨</span>
+                    <p>Choose a flower to reveal a little message.</p>
+                </div>
+
+                <button class="primary-button" data-page="memories">
+                    Visit the Memory Garden 📸
+                </button>
+            </div>
+        </section>
+
+        <!-- MEMORIES -->
+        <section class="page" id="memories">
+            <div class="section-container">
+                <button class="back-button" data-page="home">← Back to Our Little World</button>
+
+                <div class="section-heading">
+                    <span class="section-emoji">📸</span>
+                    <h1>Our Little Memory Garden</h1>
+                    <p>
+                        A picture, a laugh, a silly memory, or a moment
+                        you wish you could keep forever.
+                    </p>
+                    <p>Add your favorite pictures and let this little garden grow. 💗</p>
+                </div>
+
+                <label for="memoryUpload" class="primary-button upload-button">
+                    + Add Your Memories
+                </label>
+
+                <input type="file" id="memoryUpload" accept="image/*" multiple hidden>
+
+                <div class="memory-grid" id="memoryGrid">
+                    <div class="memory-empty" id="memoryEmpty">
+                        <span>🌸</span>
+                        <h2>Your garden is waiting to bloom!</h2>
+                        <p>Choose some pictures to add your own little moments to this page.</p>
+                    </div>
+                </div>
+
+                <p class="memory-note">
+                    Pictures are displayed in this browser. Keep your original photos safe on your device. 💜
+                </p>
+
+                <button class="secondary-button" data-page="home">
+                    Return to Your Little World 🏰
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-flowers">🌸 🦋 🌷</div>
+        <p>Made with care, just for Sodo.</p>
+        <p class="footer-small">May your world always have a little magic. ✨</p>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
